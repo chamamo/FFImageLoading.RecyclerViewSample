@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+  <declare-styleable name="CustomImageView">
+    <attr name="lazyLoading" format="boolean" />
+    <attr name="defaultImagePath" format="string" />
+    <attr name="errorImagePath" format="string" />
+  </declare-styleable>
+
+</resources>

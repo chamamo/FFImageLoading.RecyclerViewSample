@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+        <recyclerviewsample.droid.CustomImageView
+            android:id="@+id/StandardImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            local:lazyLoading="true"
+            android:scaleType="centerCrop"
+            local:defaultImagePath="Images/pretexte_carre.png"
+            local:errorImagePath="Images/pretexte_carre.png"
+            local:MvxBind="ImageUrl Url" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            local:MvxBind="Text Text" />
+    </LinearLayout>
+</LinearLayout>
